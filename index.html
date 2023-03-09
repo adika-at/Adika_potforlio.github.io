@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/979e40d15a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <section id="header">
+        <div id="topbar">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></lis>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                    </ul>
+                    <i class="fa-sharpp fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="wordings">
+        <div class="header-text">
+            <p><span>UX</span>/UI Designer</p>
+            <h2>Hi, I'm <span>Denish</span><br>A Kenyan Developer</h2>
+        </div>
+
+    </section>
+
+    <!--------------------------About-------Me---------------------------------------->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Denz.png" alt="mypic">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a continuing student at KCA University,<br>
+                I persue Bachelors Degree in Security Information<br>
+                and Forensics majoring on full stack development<br>
+                and graphics designer
+            </p>
+            <div class="table-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="Skills">
+                <ul>
+                    <li><span>Web development</span><br>Web/App Development</li>
+                    <li><span>App development</span><br>Building Android/IOS Apps</li>
+                    <li><span>Denigner</span><br>Doing Graphics Design</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="Experience">
+                <ul>
+                    <li><span>2020-2021</span><br>Online Bootcamp Moringa</li>
+                    <li><span>2021-Current</span><br>Team Lead KCAU</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="Education">
+                <ul>
+                    <li><span>2021-2023</span><br>KCA University</li>
+                    <li><span>2023</span><br>Coursera</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!---------------Services----------------------->
+    <div id="services">
+        <div class="containerr">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="one">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>owever, starting a proposal from scratch for every customer
+                        is time-consuming. Thus, this article will provide the ultimate
+                        guide to creating a proposal template you can customize
+                        for each web design project.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="two">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2 class="sub-title">App Design</h2>
+                    <p>owever, starting a proposal from scratch for every customer
+                        is time-consuming. Thus, this article will provide the ultimate
+                        guide to creating a proposal template you can customize
+                        for each web design project.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------Potrfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Android Apps</h3>
+                        <p>I build a range of mibile apps from android to IOS</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Web Application</h3>
+                        <p>I build a range of mibile apps from android to IOS</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>I build a range of mibile apps from android to IOS</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container2">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>denishadika1@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+254723533862</p>
+
+                    <div class="media-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i> </a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></i> </a>
+                    </div>
+                    <a href="Images/cv.pdf" download class="btn">Download Cv</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright @Denish Adika</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzf_o5M_KOtutMgTOo7exZPfyAXxghUgpzOT5NB80PFyQ2q3xAMrPWgxHZ_Y-QvxbbfWw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "message sent sucessfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>

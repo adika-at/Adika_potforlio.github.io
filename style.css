@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+
+#topbar {
+    float: right;
+    width: 35%;
+    height: 100vh;
+    background-image: url(Images/Denno.png);
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+
+}
+
+.container {
+    padding: 0px 0%;
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrapx;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    margin-left: 7%;
+    font-size: 30px;
+    float: left;
+
+
+}
+
+.header-text h2 {
+    font-size: 58px;
+    margin-top: 20px;
+}
+
+.header-text p {
+    font-weight: 400;
+}
+
+.header-text p span {
+    color: #ff004f;
+}
+
+.header-text h2 span {
+    color: #ff004f;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+#about {
+    padding: 80px 0px;
+    color: #ababab;
+}
+
+.about-col-2 {
+    margin-top: 740px;
+    margin-left: 570px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 630px;
+}
+
+.about-col-1 img {
+    width: 35%;
+    border-radius: 20px;
+    float: left;
+    margin-top: 340px;
+    margin-bottom: 100px;
+    margin-left: 75px;
+}
+
+.about-col-2 p {
+    font-size: 18px;
+
+}
+
+.table-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: 500px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.tab-content ul li span {
+    color: #e25e88;
+    font-size: 15px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+
+
+
+/*---------------------------------------------*/
+.containerr {
+    float: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    font-size: 26px;
+    font-weight: 400;
+
+}
+
+.services {
+    padding: 30px 0;
+
+}
+
+.services-list {
+    display: flex;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    float: left;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+.services-list div i {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid #ff004f;
+    border-radius: 6px;
+    padding: 12px 20px;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+
+}
+
+
+
+
+
+/*------------My work-------------------------------------------------------------------------------------*/
+#portfolio {
+    float: left;
+    margin-left: 65px;
+    margin-right: 65px;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 30px 0;
+
+}
+
+.worklist {
+    display: flex;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: tranform 0.5s;
+
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.layer p {
+    font-size: 18px;
+
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+
+
+
+/*-----------------------------------------contact me------------------------*/
+
+
+
+.contact-right {
+    flex-basis: 60%;
+    float: right;
+    margin-right: 250px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.contact-left h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+.contact-left p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.media-icons {
+    margin-top: 30px;
+
+}
+
+.media-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+
+
+.media-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn {
+
+    margin-top: 90px;
+    display: inline-block;
+    background: #ff004f;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.btn2 {
+
+    margin-top: 80px;
+    display: inline-block;
+    background: #ff004f;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+
+}
+
+.copyright {
+    text-align: center;
+    float: left;
+    padding: 25px 0;
+    background: #fff;
+    width: 100%;
+    color: #080808;
+    margin-top: 20px;
+}
+
+
+
+/*------------------css for small screen---------------------------------*/
+nav .fa-sharp {
+    display: none;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #topbar {
+        background-image: url(Images/Denno.png);
+        padding-right: 290px;
+
+
+
+    }
+
+    .header-text {
+        margin-top: -190px;
+        font-size: 14px;
+    }
+
+    .header-text h2 {
+        font-size: 28px;
+
+    }
+
+    nav .fa-sharp {
+        display: block;
+        font-size: 25px;
+
+
+
+    }
+
+    .fa-sharpp {
+        display: block;
+        font-size: 25px;
+        margin-left: 240px;
+        margin-top: 20px;
+    }
+
+
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 85vh;
+        padding-top: 30px;
+        z-index: 2;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-sharp {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+
+
+    .about-col-2 {
+        float: left;
+        margin-left: 30px;
+        margin-top: -100px;
+
+
+
+
+    }
+
+    .about-col-2 .sub-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+
+    .about-col-2 p {
+        font-size: 14px;
+    }
+
+    .about-col-2.table-titles {
+        font-size: 14px;
+    }
+
+    .tab-content {
+        font-size: 14px;
+    }
+
+    .about-col-1 img {
+        width: 75%;
+        margin-left: 30px;
+        margin-top: 60px;
+
+    }
+
+    .containerr .sub-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: -30px;
+
+    }
+
+    .services-list {
+        display: block;
+
+    }
+
+    .containerr .one {
+        margin-bottom: 30px;
+        margin-left: -30px;
+    }
+
+    .containerr .two {
+        margin-bottom: 30px;
+        margin-left: -30px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        margin-left: -30px;
+
+
+    }
+
+    .container {
+        display: block;
+    }
+
+    .contact-right {
+        margin-top: 20px;
+        padding-left: 200px;
+        height: 100%;
+
+
+    }
+
+    .contact-right form {
+        width: 400%;
+    }
+}
+
+#span {
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+}
